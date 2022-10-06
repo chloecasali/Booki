@@ -8,26 +8,104 @@ body
 {
     background-color: #FFFF;
     font-family: 'Raleway';
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1440px;
+    height: 1884px;
 }
 
-h2
+
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 426px;
+}
+
+.hébergement
+{
+    display: flex;
+    align-content: flex-start;
+    width: 880px;
+    height: 626px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#test
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+
+    margin-top: 440px;
+    width: 880px;
+    height: 626px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.cards_carrés
+{
+    width: 246px;
+    height: 199px;
+    border-radius: 20px;
+    background-color: #FFFF;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+}
+
+
+.populaire
+{
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1666px;
+    background-color: #F2F2F2;
+    width: 1440px;
+    height: 225px;
+}
+
+#logo
+{
+    width: 61px;
+    height: 29px;
+    top: 44px;
+}
+/*h2
 {
     position: absolute;
+    font-weight: 700;
+    size: 18px;
     width: 575px;
-    height: 26px;
-    left: 40px;
-    top: 100px;
 }
 
 img
 {
     position: absolute;
+    justify-content: flex-start;
     width: 61px;
     height: 29px;
     left: 55px;
     top: 44px;
 }
-
+*/
 /*nav
 {
     position: absolute;
@@ -128,9 +206,24 @@ border: 1px solid #0065FC;
 border-radius: 0px 15px 15px 0px; 
 } */
 
+/*.bloc_gris
+{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.pied_de_page
+{
+    display: flex;
+}
+
 .hébergement
 {
+    display: flex;
     position: absolute;
+    justify-content: flex-start;
+    width: 880px;
+    height: 626px;
     left: 1.4%;
     right: 60%;
     top: 25%;
@@ -141,11 +234,14 @@ border-radius: 0px 15px 15px 0px;
 
 .populaire
 {
+    display: flex;
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    justify-content: flex-end;
+    width: 420px;
+    height: 625px;
+    right: 1.4%;
+    top: 25%;
+    bottom: 30%;
     background: #F2F2F2;
     border-radius: 20px;
 }
@@ -181,3 +277,12 @@ h3
     text-align: center;
     color: #000;
 }
+
+.apropos1
+{
+  line-height: 21.13px;
+  width: 77px;  
+  height: 21px;
+  top: 45px;
+  left: 118px;
+}*/
