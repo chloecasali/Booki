@@ -10,14 +10,15 @@ body
     font-family: 'Raleway';
     margin-left: 50px;
     margin-right: 50px;
-    width: 1440px;
-    height: 1884px;
 }
 
+.d-flex
+{
+    display: flex;
+}  
 
 #conteneur
 {
-    display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     flex-direction: row;
@@ -26,7 +27,6 @@ body
 
 .hébergement
 {
-    display: flex;
     align-content: flex-start;
     width: 880px;
     height: 626px;
@@ -36,7 +36,6 @@ body
 
 #test
 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
