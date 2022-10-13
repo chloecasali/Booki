@@ -6,10 +6,58 @@
 
 body
 {
-    background-color: #FFFF;
-    font-family: 'Raleway';
     margin-left: 50px;
     margin-right: 50px;
+    background-color: #FFFF;
+    font-family: 'Raleway';
+}
+
+header
+{
+    justify-content: space-between ;
+    /*background-color: aqua;*/
+}
+
+
+nav
+{
+    /*background-color: red;*/
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div a
+{
+    color: rgba(0, 0, 0, 1);
+}
+
+div a:link
+{
+    color: rgba(0, 0, 0, 1);
+}
+
+div a:visited
+{
+    color: rgba(0, 0, 0, 1);
+}
+
+div a:hover
+{
+    border-top: solid 2px #0065fc;
+    color: #0065fc;
+}
+
+#logo
+{
+    width: 61.09px;
+    height: 29px;
+}
+
+h1
+{
+    font-family: 'Raleway';
+    font-weight: 700;
+    size: 22px;
 }
 
 .d-flex
@@ -17,9 +65,10 @@ body
     display: flex;
 }  
 
+
+
 #conteneur
 {
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
     flex-direction: row;
     margin-top: 426px;
@@ -81,12 +130,6 @@ body
     height: 225px;
 }
 
-#logo
-{
-    width: 61px;
-    height: 29px;
-    top: 44px;
-}
 /*h2
 {
     position: absolute;
