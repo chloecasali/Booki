@@ -15,46 +15,44 @@ body
 header
 {
     justify-content: space-between ;
-    /*background-color: aqua;*/
-}
-
-.block
-{
-    size: 30px;
-    border: 3px black;
 }
 
 nav
 {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 67px;
+    margin-top: 46px;
 }
 
-div a
+nav a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+nav a:link
 {
     color: rgba(0, 0, 0, 1);
 }
 
-div a:link
+nav a:visited
 {
     color: rgba(0, 0, 0, 1);
 }
 
-div a:visited
-{
-    color: rgba(0, 0, 0, 1);
-}
-
-div a:hover
+nav a:hover
 {
     border-top: solid 2px #0065fc;
+    padding-top: 46px;
     color: #0065fc;
+    font-weight: 500;
 }
 
 #logo
 {
     width: 61.09px;
     height: 29px;
+    margin-top: 44px;
 }
 
 .d-flex
