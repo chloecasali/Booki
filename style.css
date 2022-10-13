@@ -18,10 +18,14 @@ header
     /*background-color: aqua;*/
 }
 
+.block
+{
+    size: 30px;
+    border: 3px black;
+}
 
 nav
 {
-    /*background-color: red;*/
     flex-direction: row;
     justify-content: space-between;
 }
@@ -53,19 +57,17 @@ div a:hover
     height: 29px;
 }
 
-h1
-{
-    font-family: 'Raleway';
-    font-weight: 700;
-    size: 22px;
-}
-
 .d-flex
 {
     display: flex;
 }  
 
-
+/*h1
+{
+    font-family: 'Raleway';
+    font-weight: 700;
+    size: 22px;
+}
 
 #conteneur
 {
@@ -147,8 +149,8 @@ img
     left: 55px;
     top: 44px;
 }
-*/
-/*nav
+
+nav
 {
     position: absolute;
 left: 83.46%;
@@ -221,11 +223,6 @@ background: #FFFFFF;
 
 border: 1px solid #F2F2F2;
 border-radius: 15px;
-}
-
-.navbar
-{
-
 }
 
 .searchbutton
