@@ -17,35 +17,40 @@ header
     justify-content: space-between ;
 }
 
-nav
+nav ul
 {
     flex-direction: row;
     gap: 67px;
     margin-top: 46px;
 }
 
-nav a
+ul a
 {
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: black;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 nav a:link
 {
-    color: rgba(0, 0, 0, 1);
+    color: black;
 }
 
 nav a:visited
 {
-    color: rgba(0, 0, 0, 1);
+    color: black;
 }
 
 nav a:hover
 {
     border-top: solid 2px #0065fc;
-    padding-top: 46px;
     color: #0065fc;
     font-weight: 500;
+    padding-top: 46px;
 }
 
 #logo
