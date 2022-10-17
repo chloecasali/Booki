@@ -70,21 +70,93 @@ h1
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+    font-style: normal;
 }
 
-h5
+p
 {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin-top: 0.4px;
 }
 
 .introduction
 {
     justify-content: flex-start;
     flex-direction: column;
-    column-gap: 8px;
+    margin-top: 63px;
 }
+
+.search
+{
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 6px;
+}
+
+.location_button
+{
+    width: 14px;
+    height: 18px;
+    color: black;
+}
+
+.backgroundbutton
+{
+    width: 50px;
+    height: 47px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar
+{
+    width: 282px;
+    height: 49px;
+    border: 1px solid #F2F2F2;   
+}
+
+.search_bar::placeholder
+{
+    font-family: 'Raleway';
+    padding-left: 15px;
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 21px;
+}
+
+.Rechercher
+{
+    width: 132px;
+    height: 49px;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFF;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*#conteneur
 {
     justify-content: space-between;
