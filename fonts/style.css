@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-VariableFont_wght.ttf');
+    src: url('/css/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 body
@@ -29,14 +29,10 @@ nav ul
     margin-top: 46px;
 }
 
-nav a
+ul a
 {
     text-decoration: none;
     color: black;
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px ;
 }
 
 ul
@@ -59,7 +55,7 @@ nav a:hover
     border-top: solid 2px #0065fc;
     color: #0065fc;
     font-weight: 500;
-    padding-top: 52px;
+    padding-top: 46px;
 }
 
 #logo
@@ -75,7 +71,6 @@ h1
     font-size: 22px;
     line-height: 26px;
     font-style: normal;
-    margin-bottom: 0.4px;
 }
 
 p
@@ -83,6 +78,7 @@ p
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin-top: 0.4px;
 }
 
 .introduction
@@ -150,185 +146,56 @@ p
     padding-left: 15px;
 }
 
-input
-{
-    font-size: 18px;
-    padding-left: 15px;
-    font-family: 'Raleway';
-    font-weight: bold;
-}
 
-h3
-{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    font-style: normal;
-    text-align: center;
-}
 
-.filters_block
-{
-    justify-content: flex-start;
-    align-items: center;
-    gap: 45px;
-    margin-top: 30px ;
-}
 
-.filters ul
-{
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 90px;
-}
 
-.filters li
-{
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align: center;
-}
 
-.filters li:hover
-{
-    background-color: #deebff;
-}
 
-.filters a
-{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    padding: 10px;
-}
 
-.filters a:link
-{
-    color: black;
-}
 
-.filters a:visited
-{
-    color: black;
-}
 
-#money
-{
-   width: 22px;
-   height: 16.26px;
-   color: #0065fc; 
-}
 
-#body
-{
-    width: 22px;
-    height: 13.44px;
-    color: #0065fc;
-}
 
-#heart
-{
-    width: 22px;
-    height: 18.33px;
-    color: #0065fc;
-}
-
-#pet
-{
-    width: 22px;
-    height: 22px;
-    color: #0065fc;
-    text-align: center;
-}
-
-.info
-{
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    gap: 21px;
-}
-
-#i
-{
-    color: #0065fc;
-    width: 4px;
-    justify-content: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 53%;
-    padding-left: 12px;
-    padding-right: 13px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-/*.container1
+/*#conteneur
 {
     justify-content: space-between;
-    padding-top: 40px;
     flex-direction: row;
-    width: 1340px;
-    height: 625px;
+    margin-top: 426px;
 }
 
-h2
+.hébergement
 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    padding-left: 38px;
-    padding-top: 25px;
-}
-
-.hébergements
-{
+    align-content: flex-start;
     width: 880px;
-    height: 625px;
+    height: 626px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    flex: 2 880px;
-    margin-right: 40px;
 }
 
-.populaires
+#test
 {
-    width: 420px;
-    height: 625px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+
+    margin-top: 440px;
+    width: 880px;
+    height: 626px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    flex: 1 420px;
 }
 
-.cards_model1
+.cards_carrés
 {
-    justify-content: flex-start;
-    align-content: center;
-    flex-flow: row wrap;
     width: 246px;
     height: 199px;
     border-radius: 20px;
     background-color: #FFFF;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
-}
-
-/*#test
-{
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    margin-top: 440px;
-    width: 880px;
-    height: 626px;
-    border-radius: 20px;
-    background-color: #F2F2F2;
 }
 
 
@@ -338,63 +205,30 @@ h2
     height: 625px;
     border-radius: 20px;
     background-color: #F2F2F2;
-}*/
+}
 
-
-footer
+#footer
 {
-    height: 225px;
-    margin-top: 1666px;
-    background-color: #F2F2F2;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 70px;
-    padding-right: 348px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 1666px;
+    background-color: #F2F2F2;
+    width: 1440px;
+    height: 225px;
 }
 
-.rubrics
+/*h2
 {
-    flex-direction: column;
-    justify-content: flex-start;
+    position: absolute;
+    font-weight: 700;
+    size: 18px;
+    width: 575px;
 }
 
-.rubrics a
-{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-}
-
-.rubriqueApropos ul
-{
-    flex-direction: column;
-    row-gap: 12px;
-}
-
-.rubriqueHébergements ul
-{
-    flex-direction: column;
-    row-gap: 12px;
-}
-
-.rubriqueAssistance ul
-{
-    flex-direction: column;
-    row-gap: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-/*img
+img
 {
     position: absolute;
     justify-content: flex-start;
@@ -404,7 +238,73 @@ footer
     top: 44px;
 }
 
+nav
+{
+    position: absolute;
+left: 83.46%;
+right: 0%;
+top: 0%;
+bottom: 0%;
 
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+
+text-align: center;
+
+color: #000000;
+
+}
+
+h2
+{
+    position: absolute;
+width: 575px;
+height: 26px;
+left: 55px;
+top: 126px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+
+
+
+color: #000000;
+
+}
+
+p
+{
+    position: absolute;
+width: 296px;
+height: 19px;
+left: 55px;
+top: 160px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+
+color: #000000;
+}
+
+fieldset
+{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
 bottom: 0%;
 
 background: #FFFFFF;
@@ -471,4 +371,45 @@ border-radius: 0px 15px 15px 0px;
     bottom: 30%;
     background: #F2F2F2;
     border-radius: 20px;
+}
+
+
+h3
+{
+    position: absolute;
+    width: 205px;
+    height: 26px;
+    left: 1007px;
+    top: 468px;
+}
+
+.navbar1
+{
+    position: absolute;
+    left: 85%;
+    right: 34.12%;
+    top: 30px;
+    bottom: 0%;
+    text-align: center;
+    color: #0065FC;
+}
+
+.navbar2
+{
+    position: absolute;
+    left: 92%;
+    right: 34.12%;
+    top: 30px;
+    bottom: 0%;
+    text-align: center;
+    color: #000;
+}
+
+.apropos1
+{
+  line-height: 21.13px;
+  width: 77px;  
+  height: 21px;
+  top: 45px;
+  left: 118px;
 }*/
