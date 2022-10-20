@@ -281,6 +281,19 @@ h3
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.cards_model2
+{
+    width: 343px;
+    height: 144px;
+    border-radius: 20px;
+    background-color: #FFFF;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 37px ;
+    row-gap: 15px;
+}
+
 .cards_pictures
 {
     width: 246px;
@@ -291,17 +304,28 @@ h3
     justify-content: flex-start;
 }
 
+.cards_pictures2
+{
+    width: 137px;
+    height: 144px;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
 h4
 {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    padding-left: 16px;
-    padding-top: 4px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-left: 16px;
+    padding-top: 4px;
 }
 
 .description
@@ -313,6 +337,17 @@ h4
     margin-top: 0px;
     margin-bottom: 0px;
     gap: 3px;
+}
+
+.description2
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0px ;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 40px;
 }
 
 .container1
@@ -347,15 +382,16 @@ h2
 }
 
 
-/*.populaires
+.populaires
 {
     width: 420px;
     height: 625px;
     border-radius: 20px;
     background-color: #F2F2F2;
+    flex-direction: column;
 }
 
-.cards
+/*.cards
 {
     flex-direction: row;
     flex-wrap: wrap;
