@@ -6,12 +6,17 @@
 
 body
 {
-    width: 1400px;
+    max-width: 1400px;
     margin-left: 50px;
     margin-right: 50px;
     background-color: #FFFF;
     font-family: 'Raleway';
 }
+
+/*.main
+{
+    max-width: 1400px;
+}*/
 
 .d-flex
 {
@@ -57,10 +62,10 @@ nav a:visited
 
 nav a:hover
 {
-    border-top: solid 2px #0065fc;
+    border-top: solid 3px #0065fc;
     color: #0065fc;
     font-weight: 500;
-    padding-top: 52px;
+    padding-top: 51px;
 }
 
 #logo
@@ -277,7 +282,6 @@ h3
     height: 199px;
     border-radius: 20px;
     background-color: #FFFF;
-    margin-left: 40px;
     column-gap: 4px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -352,12 +356,34 @@ h4
     gap: 75px;
 }
 
+.description3
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3px ;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 55px;
+}
+
 .container1
 {
     gap: 40px;
     width: 1340px;
     height: 626px;
     padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.div1
+{
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    gap: 31px;
 }
 
 h2
@@ -365,7 +391,7 @@ h2
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    padding-left: 38px;
+    padding-left: 40px;
     padding-top: 25px;
 }
 
@@ -378,11 +404,22 @@ h2
     flex-direction: column;
 }
 
+#more
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    padding-top: 40px;
+    padding-left: 44px;
+}
+
 .stars
 {
     color: #0065fc;
 }
-
 
 .populaires
 {
@@ -393,32 +430,55 @@ h2
     flex-direction: column;
 }
 
-/*.cards
+.title_popular_rubric
 {
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 42px;
 }
 
-.cards_model1
+#chart-line
+{
+   color: #0065fc;
+   width: 18px;
+   height: 16px;
+   padding-top: 28px; 
+}
+
+.div2
 {
     justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 246px;
-    height: 199px;
-    border-radius: 20px;
-    background-color: #FFFF;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
+    gap: 31px;
 }
 
-img
+.container2
 {
-    border: 5px solid #FFFF;
-    border-radius: 20px 20px 0px 0px;
-    width: 246px;
-    height: 124px;
-}*/
+    width: 1337px;
+    height: 493px;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+}
+
+.cards_model3
+{
+    width: 302px;
+    height: 445px;
+    border-radius: 20px;
+    background-color: #FFFF;
+}
+
+.cards_pictures3
+ {
+    height: 388.51px;
+    width: 302px;
+    border-radius: 20px 20px 0px 0px ;
+ }
+
+
+
+
 
 footer
 {
