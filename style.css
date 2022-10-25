@@ -7,16 +7,10 @@
 body
 {
     max-width: 1400px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: auto;
     background-color: #FFFF;
     font-family: 'Raleway';
 }
-
-/*.main
-{
-    max-width: 1400px;
-}*/
 
 .d-flex
 {
@@ -65,7 +59,7 @@ nav a:hover
     border-top: solid 3px #0065fc;
     color: #0065fc;
     font-weight: 500;
-    padding-top: 51px;
+    padding-top: 43px;
 }
 
 #logo
@@ -164,7 +158,9 @@ input
     font-weight: bold;
 }
 
-h3
+
+
+h4
 {
     font-weight: 700;
     font-size: 18px;
@@ -320,7 +316,7 @@ h3
 
 }
 
-h4
+h5
 {
     font-family: 'Raleway';
     font-weight: 700;
@@ -448,17 +444,34 @@ h2
 .div2
 {
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 31px;
+    gap: 32px;
 }
 
 .container2
 {
-    width: 1337px;
-    height: 493px;
-    background-color: #F2F2F2;
     margin-top: 60px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+h3
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-bottom: 18px;
+}
+
+.activities
+{
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .cards_model3
@@ -467,27 +480,47 @@ h2
     height: 445px;
     border-radius: 20px;
     background-color: #FFFF;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0px;
+    row-gap: 15px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .cards_pictures3
  {
-    height: 388.51px;
+    height: 389px;
     width: 302px;
-    border-radius: 20px 20px 0px 0px ;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid;
  }
 
+.div3
+{
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 43px;
+}
 
+.cardslink
+{
+    text-decoration: none;
+    color: black;
+}
 
-
+.cardslink:hover
+{
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
+}
 
 footer
 {
     height: 225px;
-    width: 1339px;
-    margin-top: 1666px;
+    width: 930px;
+    margin-top: 60px;
     background-color: #F2F2F2;
-    justify-content: flex-start;
-    gap: 230px;
+    justify-content: space-between;
+    gap: 30px;
     padding-top: 45px;
     padding-left: 70px;
     padding-right: 348px;
