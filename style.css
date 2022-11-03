@@ -138,19 +138,36 @@ p
 
 .Rechercher
 {
-    width: 132px;
-    height: 49px;
+    width: auto;
+    height: auto;
     background-color: #0065fc;
     border: 1px solid #0065fc;
     border-radius: 0px 15px 15px 0px;
     font-family: 'Raleway';
-    text-align: center;
     font-weight: normal;
     font-weight: 700;
     font-size: 18px;
+    padding-right: 10px;
     line-height: 21px;
     color: #FFFF;
-    padding-left: 15px;
+}
+
+.RechercherMobile
+{
+    display: none;
+    width: 49px;
+    height: 49px;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#loupe
+{
+    display: none;
+    width: 17px;
+    height: 17px;
+    color: #FFFF;
 }
 
 input
@@ -160,8 +177,6 @@ input
     font-family: 'Raleway';
     font-weight: bold;
 }
-
-
 
 h4
 {
@@ -173,17 +188,15 @@ h4
 
 .filters_block
 {
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
     margin-top: auto ;
+    flex-wrap: wrap;
 }
 
 .filters ul
 {
     flex-direction: row;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 50px;
 }
 
 .filters li
@@ -195,6 +208,7 @@ h4
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
+    justify-content: space-between;
 }
 
 .filters li:hover
@@ -369,21 +383,21 @@ h5
 
 .container1
 {
-    justify-content: space-between;
     width: auto;
     height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     padding-top: 40px;
-    flex-wrap: wrap;
+    gap: 40px;
+
 }
 
 .div1
 {
     justify-content: flex-start;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 40px;
+    flex-flow: row wrap;
+    margin-left: 15px;
     gap: 31px;
 }
 
@@ -392,14 +406,14 @@ h2
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    padding-left: 40px;
+    margin-left: 25px;
     padding-top: 25px;
 }
 
 .hébergements
 {
-    width: 880px;
-    height: 626px;
+    width: auto;
+    height: auto;
     border-radius: 20px;
     background-color: #F2F2F2;
     flex-direction: column;
@@ -424,8 +438,8 @@ h2
 
 .populaires
 {
-    width: 420px;
-    height: 625px;
+    width: auto;
+    height: auto;
     border-radius: 20px;
     background-color: #F2F2F2;
     flex-direction: column;
@@ -448,18 +462,11 @@ h2
 
 .div2
 {
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-.container2
-{
-    margin-top: 60px;
-    width: auto;
-    height: auto;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 30px;
+    margin-bottom: 40px;
 }
 
 h3
@@ -474,44 +481,59 @@ h3
     padding-bottom: 18px;
 }
 
+.container2
+{
+    margin-top: 60px;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+}
+
 .activities
 {
     width: auto;
     height: auto;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .cards_model3
 {
     width: 302px;
     height: 445px;
-    border-radius: 20px;
-    background-color: #FFFF;
     flex-direction: column;
-    justify-content: space-between;
-    row-gap: 15px;
+    background-image: url(assets/images/Rectangle31.png);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-/*.title_white_back
+.cards_pictures3
 {
+
+    object-fit: scale-down;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    background-image: url(assets/images/Rectangle31.png);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title_white_back
+{
+    z-index: 2;
+    width: auto;
+    height: 56px;
     background-color: #FFFF;
+    justify-content: flex-start;
     border-radius: 0px 0px 20px 20px;
 }
 
-.cards_pictures3
- {
-    height: 389px;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px !important;
- }*/
-
-.div3
+.div3 
 {
-    justify-content: flex-end;
+    width: auto;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 64px;
 }
+
 
 .cardslink
 {
@@ -577,9 +599,143 @@ footer
 }
 
 
+
+
+
+
+
+
 @media (max-width: 768px) {
-    .populaires{
-        flex-direction: row;
+    header 
+    {
+        flex-direction: column;
     }
 
+    #logo
+    {
+        justify-content: center;
+    }
+    
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: solid 2px #0065fc;
+        padding-bottom: 23px;
+    }
+
+    nav ul
+    {
+        gap: 130px;
+    }
+
+    .filters_block
+    {
+        margin-top: auto ;
+        flex-wrap: wrap;
+    }
+
+    .filters ul
+    {
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .Rechercher
+    {
+        display: none;
+    }
+
+    .RechercherMobile
+    {
+        display:block;
+    }
+
+    #loupe
+    {
+        display: contents;
+    }
+   
+    #logo
+    {
+        justify-content: center;
+    }
+
+    nav a 
+    {
+        border-bottom: solid 2px #F2F2F2;
+        padding-bottom: 23px;
+    }
+}
+
+
+@media (max-width: 992px){
+    
+    .container1
+    {
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        padding-top: 34px;
+        flex-flow: row wrap;
+    }
+
+
+    .populaires
+    {
+        margin-top: 53px;
+    }
+    .div2
+    {
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 0px;
+        margin-right: 30px;
+    }
+    .cards_model2
+    {
+        width: 252px;
+        height: 144px;
+        border-radius: 20px;
+        background-color: #FFFF;
+        margin-left: 37px ;
+        row-gap: 15px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    h5 
+    {
+
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-left: 3px;
+        padding-top: 6px;
+    }
+
+    .description2
+    {
+        padding-top: 0px ;
+        padding-left: 3px;
+        margin-bottom: 0px;
+        gap: 43px;
+    }
+
+    .description3
+    {
+        
+        padding-top: 0px ;
+        padding-bottom: 0px;
+        padding-left: 3px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        gap: 28px;
+    }
+
+    footer 
+    {
+        gap: 10px;
+    }
 }

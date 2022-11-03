@@ -10,7 +10,7 @@
     <body>
         
         <header class="d-flex">
-                <img id="logo" src="assets/images/Reservia@2x.png" alt="logo Booki">
+                <img class="d-flex" id="logo" src="assets/images/Reservia@2x.png" alt="logo Booki">
 
                     <nav class="d-flex">
                         <ul class="d-flex">
@@ -34,7 +34,8 @@
 
             <form method="post" action="results.php" class="d-flex">
                 <label for="search"></label><input type="search" class="d-flex search_bar" placeholder="Marseille, France">
-                <label for="searching"></label><input type="submit" class="d-flex Rechercher" value="Rechercher">      
+                <label for="searching"></label><input type="submit" class="d-flex Rechercher" value="Rechercher"> 
+                <button type="submit" class="RechercherMobile"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>   
             </form>
         </div>
 
@@ -61,6 +62,7 @@
         <div class="d-flex container1">
             <section class="d-flex hébergements" id="hébergements">
                 <h2>Hébergements à Marseille</h2>
+                
                     <div class="d-flex div1">
                         
                         <a href="#" class="cardslink">
@@ -138,6 +140,7 @@
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" id="chart-line"></i>
                 </div>
+
                 <div class="d-flex div2">
 
                 <a href="#" class="cardslink">    
@@ -178,49 +181,61 @@
                     </div>
                 </article>
                 </a>
+
                 </div>
             </section>
         </div>
 
 
-            <div class="d-flex container2" style="background-color: grey ;">
+            <div class="d-flex container2">
                 <section class="d-flex activities" id="activités">
 
                     <h3>Activités à Marseille</h3>
-                    
-                    <div class="d-flex div3">
 
-                        <a href="#" class="cardslink">
-                            <article class="d-flex cards_model3">
-                            <img class="d-flex cards_pictures3" src="assets/images/Rectangle31.png" alt="vieux port">
-                                <div class="title_white_back">
-                                    <h5>Vieux-Port</h5>
-                                </div>
-                            </article>
-                        </a>
+                        <div class="d-flex div3">
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model3">
-                            <img class="d-flex cards_pictures3" src="assets/images/Rectangle32.png" alt="fort de pomègues">
-                            <h5>Fort de Pomègues</h5>
-                        </article>
-                        </a>
+                            <a href="#" class="cardslink">
+                                <article class="d-flex cards_model3">
+                                    <img class="d-flex cards_pictures3" src="assets/images/Rectangle31.png" alt="vieux port">
+                                    <h5 class="d-flex title_white_back">Vieux-Port</h5>
+                                </article>
+                            </a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model3">
-                            <img class="d-flex cards_pictures3" src="assets/images/Rectangle33.png" alt="parc national des calanques">
-                            <h5>Parc national des Calanques</h5>
-                        </article>
-                        </a>
+                
+                            <a href="#" class="cardslink">
+                                <article class="d-flex cards_model3">
+                                    <h5 class="d-flex title_white_back">Vieux-Port</h5>
+                                </article>
+                            </a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model3">
-                            <img class="d-flex cards_pictures3" src="assets/images/Rectangle34.png" alt="notre dame de la garde">
-                            <h5>Notre-Dame-de-la-Garde</h5>
-                        </article>
-                        </a>
 
-                    </div>
+
+
+
+
+
+
+                            <!--<a href="#" class="cardslink">
+                                <article class="d-flex cards_model3">
+                                    <img class="d-flex cards_pictures3" src="assets/images/Rectangle32.png" alt="fort de pomègues">
+                                    <h5 class="title_white_back">Fort de Pomègues</h5>
+                                </article>
+                            </a>
+
+                            <a href="#" class="cardslink">
+                                <article class="d-flex cards_model3">
+                                    <img class="d-flex" src="assets/images/Rectangle33.png" alt="parc national des calanques">
+                                    <h5>Parc national des Calanques</h5>
+                                </article>
+                            </a>
+
+                            <a href="#" class="cardslink">
+                                <article class="d-flex cards_model3">
+                                    <img class="d-flex cards_pictures3" src="assets/images/Rectangle34.png" alt="notre dame de la garde">
+                                    <h5>Notre-Dame-de-la-Garde</h5>
+                                </article>
+                            </a>-->
+                        </div>
                 </section>
             </div>
 
