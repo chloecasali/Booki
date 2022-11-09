@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="fr">
+
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -7,235 +9,263 @@
         <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
     </head>
 
-    <body>
-        
-        <header class="d-flex">
-                <img class="d-flex" id="logo" src="assets/images/Reservia@2x.png" alt="logo Booki">
 
-                    <nav class="d-flex">
+
+    <body> <!--<main>, corps du site Booki-->
+        
+
+        <header class="d-flex"> <!--header du site avec le logo et le menu de navigation-->
+                <img class="d-flex logo" src="assets/images/Reservia@2x.png" alt="logo_Booki"> <!--logo Booki-->
+                    <nav class="d-flex"> <!--menu de navigation en <ul> et <li> avec liens-->
                         <ul class="d-flex">
-                            <li><a href="#hébergements">Hébergements</a></li>
-                            <li><a href="#activités">Activités</a></li>
+                            <li><a href="#hébergements">Hébergements</a></li> <!--ancre menant vers la section "Hébergements"-->
+                            <li><a href="#activités">Activités</a></li> <!--ancre menant vers la section "Activités"-->
                         </ul>
                     </nav>
         </header>
 
+
+
         
-        <div class="d-flex introduction">
+        <div class="d-flex introduction"> <!--<div> introduction avec le h1 et un p-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
         </div>
 
 
-        <div class="d-flex search">
-                <div class="d-flex backgroundbutton">
-                    <i class="fa-solid fa-location-dot location_button"></i>
+
+
+        <div class="d-flex search-bar"> <!--barre de recherche des pour les villes composée en 3 parties :-->
+                <div class="d-flex backgroundbutton"> <!--l'icône de navigation avec le fond gris et l'icône FontAwesome-->
+                    <i class="fa-solid fa-location-dot location_button"></i> <!--l'icône FontAwesome-->
                 </div>
 
-            <form method="post" action="results.php" class="d-flex">
-                <label for="search"></label><input type="search" class="d-flex search_bar" placeholder="Marseille, France">
-                <label for="searching"></label><input type="submit" class="d-flex Rechercher" value="Rechercher"> 
-                <button type="submit" class="RechercherMobile"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>   
+
+            <form method="post" action="results.php" class="d-flex"> <!--formulaire de recherche-->
+                <label for="search"></label><input id="search" type="search" class="d-flex input-utilisateur" placeholder="Marseille, France"> <!--input utilisateur avec placeholder-->
+                <label for="submit"></label><input id="submit" type="submit" class="d-flex Rechercher" value="Rechercher"> <!--bouton "Rechercher sur desktop et tablette"-->
+                <button type="submit" class="RechercherMobile"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button> <!--bouton icône loupe de FontAwesome sur mobile-->  
             </form>
         </div>
 
 
-        <div class="d-flex filters_block">
+        
+
+        <div class="d-flex filters-menu"> <!--ensemble des filtres que l'utilisateur sélectionne-->
             <h4>Filtres</h4>
-                <div class="d-flex filters">
-                    <ul class="d-flex">
-                        <li><i class="fa-solid fa-money-bill-wave" id="money"></i><a href="#">Économique</a></li>
-                        <li><i class="fa-solid fa-child" id="body"></i><a href="#">Familial</a></li>
-                        <li><i class="fa-solid fa-heart" id="heart"></i><a href="#">Romantique</a></li>
-                        <li><i class="fa-solid fa-dog" id="pet"></i><a href="#">Animaux autorisés</a></li>
+                    <ul class="d-flex filters"> <!--liste des filtres-liens avec les icônes FontAwesome-->
+                        <li><i class="fa-solid fa-money-bill-wave money"></i><a href="#">Économique</a></li> <!--filtre "Économique"-->
+                        <li><i class="fa-solid fa-child body"></i><a href="#">Familial</a></li> <!--filtre "Familial"-->
+                        <li><i class="fa-solid fa-heart heart"></i><a href="#">Romantique</a></li> <!--filtre "Romantique"-->
+                        <li><i class="fa-solid fa-dog pet"></i><a href="#">Animaux autorisés</a></li> <!--filtre "Animaux autorisés"-->
                     </ul>
-                </div>
         </div>
 
 
-        <div class="d-flex info">
-            <i class="fa-solid fa-info d-flex" id="i"></i>
+
+
+        <div class="d-flex information"> <!--<div> information avec icône FontAwesome et un p-->
+            <i class="d-flex fa-solid fa-info i"></i> <!--icône FontAwesome-->
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
 
-        <div class="d-flex container1">
-            <section class="d-flex hébergements" id="hébergements">
-                <h2 class="title_hebergement_rubric">Hébergements à Marseille</h2>
-                
-                    <div class="d-flex div1">
+
+
+        <div class="d-flex div-sections-block"> <!--<div> qui englobe les deux sections Hébergements/Activités-->
+
+
+            <section class="d-flex accommodations" id="hébergements"> <!--section "Hébergements" avec l'ancre pour le menu de navigation-->
+                <h2 class="title_accommodations_rubric">Hébergements à Marseille</h2> <!--<h2> de la section "Hébergements"-->
+                    <div class="d-flex div-accommodations-cards-block"> <!--<div> qui englobe toutes les cards "Hébergements"-->
                         
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle.png" alt="auberge de la canebière">
-                            <h5>Auberge La Canebière</h5>   
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 25€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul> 
-                        </article>
-                        </a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle1.png" alt="hôtel du port">
-                            <h5>Hôtel du port</h5>
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 52€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul>
-                        </article>
-                        </a>
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards"> <!--cards hébergement qui sont des liens cliquables-->
+                                <img class="d-flex accommodation-image-card" src="assets/images/Rectangle.png" alt="auberge_de_la_canebière"> <!--image de la card-->
+                                    <h5>Auberge La Canebière</h5> <!--<h5> titre de la card-->   
+                                        <ul class="d-flex accommodation-description-card"> <!--description de la card en deux parties :-->
+                                            <li>Nuit à partir de 25€</li> <!--le prix de la nuit-->
+                                            <li><i class="fa-solid fa-star rate"></i> <!--l'évaluation des utilisateurs sur l'hébergement-->
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i></li>
+                                        </ul> 
+                        </article></a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle2.png" alt="hôtel les mouettes">
-                            <h5>Hôtel Les mouettes</h5>
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 76€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul>
-                        </article>
-                        </a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle4.png" alt="hôtel de la mer">
-                            <h5>Hôtel de la mer</h5>
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 46€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul>
-                        </article>
-                        </a>
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards">
+                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle1.png" alt="hôtel_du_port">
+                                <h5>Hôtel du port</h5>
+                                    <ul class="d-flex accommodation-description-card">
+                                        <li>Nuit à partir de 52€</li>
+                                        <li><i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i></li>
+                                    </ul>
+                        </article></a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle5.png" alt="auberge le panier">
-                            <h5>Auberge Le Panier</h5>
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 23€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul>
-                        </article>
-                        </a>
 
-                        <a href="#" class="cardslink">
-                        <article class="d-flex cards_model1">
-                            <img class="d-flex cards_pictures" src="assets/images/Rectangle6.png" alt="hôtel chez amina">
-                            <h5>Hôtel Chez Amina</h5>
-                                <ul class="d-flex description">
-                                    <li>Nuit à partir de 96€</li>
-                                    <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                                </ul>
-                        </article>
-                        </a>
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards">
+                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle2.png" alt="hôtel_les_mouettes">
+                                <h5>Hôtel Les mouettes</h5>
+                                    <ul class="d-flex accommodation-description-card">
+                                        <li>Nuit à partir de 76€</li>
+                                        <li><i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i></li>
+                                    </ul>
+                        </article></a>
+
+
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards">
+                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle4.png" alt="hôtel_de_la_mer">
+                                <h5>Hôtel de la mer</h5>
+                                    <ul class="d-flex accommodation-description-card">
+                                        <li>Nuit à partir de 46€</li>
+                                        <li><i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i></li>
+                                    </ul>
+                        </article></a>
+
+
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards">
+                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle5.png" alt="auberge_le_panier">
+                                <h5>Auberge Le Panier</h5>
+                                    <ul class="d-flex accommodation-description-card">
+                                        <li>Nuit à partir de 23€</li>
+                                        <li><i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i></li>
+                                    </ul>
+                        </article></a>
+
+
+                        <a href="#" class="card-link"><article class="d-flex accommodation-cards">
+                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle6.png" alt="hôtel_chez_amina">
+                                <h5>Hôtel Chez Amina</h5>
+                                    <ul class="d-flex accommodation-description-card">
+                                        <li>Nuit à partir de 96€</li>
+                                        <li><i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i>
+                                            <i class="fa-solid fa-star rate"></i></li>
+                                    </ul>
+                        </article></a>
+
+
                     </div>
-                <a href="#" class="more">Afficher plus</a> 
+                        <a href="#" class="more">Afficher plus</a> 
             </section>
 
 
-            <section class="d-flex populaires">
-                <div class="d-flex title_popular_rubric">
+
+
+            <section class="d-flex populars"> <!--section "Populaires"-->
+                <div class="d-flex title-populars-rubric-and-icon"> <!--<div> avec le <h2> de la section "Populaires" et l'icône FontAwesome-->
                     <h2>Les plus populaires</h2>
-                    <i class="fa-solid fa-chart-line" id="chart-line"></i>
+                    <i class="fa-solid fa-chart-line grow"></i>
                 </div>
 
-                <div class="d-flex div2">
 
-                <a href="#" class="cardslink">    
-                <article class="d-flex cards_model2">
-                    <img class="d-flex cards_pictures2" src="assets/images/Rectangle22.png" alt="hotel le soleil du matin">
-                    <div class="div-popular-description">
-                        <h5>Hôtel Le soleil du matin</h5>
-                            <ul class="d-flex description2">
-                                <li>Nuit à partir de 128€</li>
-                                <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                            </ul>
+                    <div class="d-flex div-popular-cards-block"> <!--<div> qui englobe toutes les cards "Populaires"-->
+
+
+                        <a href="#" class="card-link"><article class="d-flex popular-card"> <!--cards populaires qui sont des liens cliquables-->
+                            <img class="d-flex popular-image-card" src="assets/images/Rectangle22.png" alt="hotel_le soleil_du_matin"> <!--image de la card-->
+                                <div class="div-popular-description"> <!--<div> description AVEC le titre de la card et la description-->
+                                    <h5>Hôtel Le soleil du matin</h5> <!--<h5> titre de la card-->
+                                        <ul class="d-flex popular-description-card"> <!--description de la card en deux parties :-->
+                                            <li>Nuit à partir de 128€</li> <!--le prix de la nuit-->
+                                            <li><i class="fa-solid fa-star rate"></i> <!--l'évaluation des utilisateurs sur l'hébergement-->
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i></li>      
+                                        </ul>
+                                </div>
+                        </article></a>
+
+
+                        <a href="#" class="card-link"><article class="d-flex popular-card">
+                            <img class="d-flex popular-image-card" src="assets/images/Rectangle24.png" alt="hôtel_bleu_et_blanc">
+                                <div class="div-popular-description">
+                                    <h5>Hôtel Bleu et Blanc</h5>
+                                        <ul class="d-flex popular-description-card">
+                                            <li>Nuit à partir de 68€</li>
+                                            <li><i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i></li>
+                                        </ul>
+                                </div>
+                        </article></a>
+
+
+                        <a href="#" class="card-link"><article class="d-flex popular-card">
+                            <img class="d-flex popular-image-card" src="assets/images/Rectangle23.png" alt="chambres_d_hotes_au_coeur_de_l_eau">
+                                <div class="div-popular-description">
+                                    <h5>Chambres d’hôtes Au cœur de l’eau</h5>
+                                        <ul class="d-flex popular-description-card2">
+                                            <li>Nuit à partir de 71€</li>
+                                            <li><i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i>
+                                                <i class="fa-solid fa-star rate"></i></li>
+                                        </ul>
+                                </div>
+                        </article></a>
+
+
                     </div>
-                </article>
-                </a>
 
-                <a href="#" class="cardslink">
-                <article class="d-flex cards_model2">
-                    <img class="d-flex cards_pictures2" src="assets/images/Rectangle24.png" alt="hôtel bleu et blanc">
-                    <div class="div-popular-description">
-                        <h5>Hôtel Bleu et Blanc</h5>
-                            <ul class="d-flex description2">
-                                <li>Nuit à partir de 68€</li>
-                                <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                            </ul>
-                    </div>
-                </article>
-                </a>
 
-                <a href="#" class="cardslink">
-                <article class="d-flex cards_model2">
-                    <img class="d-flex cards_pictures2" src="assets/images/Rectangle23.png" alt="chambre">
-                    <div class="div-popular-description">
-                        <h5>Chambres d’hôtes Au cœur de l’eau</h5>
-                            <ul class="d-flex description3">
-                                <li>Nuit à partir de 71€</li>
-                                <li><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star star"></i></li>
-                            </ul>
-                    </div>
-                </article>
-                </a>
-
-                </div>
             </section>
         </div>
 
 
 
 
+            <section class="d-flex activities" id="activités"> <!--section "Activités"-->
+                    <h3>Activités à Marseille</h3> <!--<h3> de la section "Activités"-->
+                        <div class="d-flex div-activities-cards-block"> <!--<div> qui englobe toutes les cards "Activités"-->
 
-                <section class="d-flex activities" id="activités">
-                    <h3>Activités à Marseille</h3>
-                        <div class="d-flex div3">
-                            <a href="#" class="cardslink">
 
-                                <div class="activity-card">
-
-                                <div class="activity-card-image"><img src="assets/images/Images+Booki/Images_Booki/activites/3_medium/vieux_port_medium.jpg" alt="vieux_port"></div>
-                                <div class="activity-card-title"><h5>Vieux Port</h5></div>
-
-                                </div>
-
-                            </a>
+                            <a href="#" class="card-link"><article class="activity-card"> <!--cards activités qui sont des liens cliquables-->
+                                <div class="activity-card-image"><img src="assets/images/Images+Booki/Images_Booki/activites/3_medium/vieux_port_medium.jpg" alt="vieux_port"></div> <!--image de la card-->
+                                <div class="activity-card-title"><h5>Vieux Port</h5></div> <!--titre de la card-->
+                            </article></a>
                             
-                            <a href="#" class="cardslink">
 
-                                <div class="activity-card">
-
+                            <a href="#" class="card-link"><article class="activity-card">
                                 <div class="activity-card-image"><img src="assets/images/Images+Booki/Images_Booki/activites/3_medium/fort_de_pomègues_medium.jpg" alt="fort_de_pomègues"></div>
                                 <div class="activity-card-title"><h5>Fort de Pomègues</h5></div>
+                            </article></a>
 
-                                </div>
 
-                            </a>
-
-                            <a href="#" class="cardslink">
-
-                                <div class="activity-card">
-
+                            <a href="#" class="card-link"><article class="activity-card">
                                 <div class="activity-card-image"><img src="assets/images/Images+Booki/Images_Booki/activites/3_medium/parc_national_des_calanques_medium.jpg" alt="parc_national_des_calanques"></div>
                                 <div class="activity-card-title"><h5>Parc national des Calanques</h5></div>
+                            </article></a>
 
-                                </div>
 
-                            </a>
-
-                            <a href="#" class="cardslink">
-
-                                <div class="activity-card">
-
+                            <a href="#" class="card-link"><article class="activity-card">
                                 <div class="activity-card-image"><img src="assets/images/Images+Booki/Images_Booki/activites/3_medium/notre_dame_de_la_garde_medium.jpg" alt="notre_dame_de_la_garde"></div>
                                 <div class="activity-card-title"><h5>Notre-Dame-de-la-Garde</h5></div>
+                            </article></a>
 
-                                </div>
-
-                            </a>
                             
                         </div>
                 </section>
@@ -243,37 +273,45 @@
 
 
 
-        <footer class="d-flex">
-            <section class="d-flex rubrics">
-                <h4 class="rubricsTitles">À propos</h4>
-                <div class="d-flex Apropos">
-                    <ul class="d-flex list">
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
+        <footer class="d-flex"> <!--footer, pied de page du site Booki-->
+            <section class="d-flex footer-rubrics"> <!--les trois rubriques du footer-->
+                <h4 class="footer-rubrics-titles">À propos</h4> <!--le titre de la rubrique-->
+                    <div class="d-flex about"> <!--la rubrique "À propos"-->
+                        <ul class="d-flex"> <!--liste des liens à suivre-->
+                            <li><a href="#">Fonctionnement du site</a></li> <!--lien-->
+                            <li><a href="#">Conditions générales</a></li>
+                            <li><a href="#">Données et confidentialité</a></li>
+                        </ul>
+                    </div>
             </section>
 
-            <section class="d-flex rubrics">
-                <h4 class="rubricsTitles">Nos hébergements</h4>
-                <div class="d-flex Hébergements">
-                    <ul class="d-flex">
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Proposer votre hôtel</a></li>
-                    </ul>
-                </div>
+
+            <section class="d-flex footer-rubrics">
+                <h4 class="footer-rubrics-titles">Nos hébergements</h4>
+                    <div class="our-accommodations">
+                        <ul class="d-flex">
+                            <li><a href="#">Charte qualité</a></li>
+                            <li><a href="#">Proposer votre hôtel</a></li>
+                        </ul>
+                    </div>
             </section>
 
-            <section class="d-flex rubrics">
-                <h4 class="rubricsTitles">Assistance</h4>
-                <div class="d-flex Assistance">
-                    <ul class="d-flex">
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
+
+            <section class="d-flex footer-rubrics">
+                <h4 class="footer-rubrics-titles">Assistance</h4>
+                    <div class="help">
+                        <ul class="d-flex">
+                            <li><a href="#">Centre d'aide</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
             </section>
         </footer>
+
+
     </body>
+
+
+
+
 </html>
