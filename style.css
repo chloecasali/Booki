@@ -419,6 +419,8 @@ nav li a:hover /* problème de padding lors du hover */
 {
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 }
+
+/* Footer */
 footer
 {
     margin-top: 60px;
@@ -552,7 +554,6 @@ footer
     {
         border-top: none;
         border-bottom: solid 2px #0065fc;
-        padding: auto;
         margin: 0;
     }
 
