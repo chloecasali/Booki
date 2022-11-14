@@ -442,6 +442,22 @@ footer
     padding-left: 40px;
 }
 
+/* correction bug responsive par une media querrie*/
+@media screen and (max-width: 1190px) {
+    .popular-card
+    {
+        width: 290px;
+    }
+    .popular-image-card
+    {
+        width: 110px;
+    }
+    .popular-image-card img
+    {
+        width: 110px;
+    }
+}
+
 /*RESPONSIVE TABLETTE*/
 @media screen and (max-width: 992px) {
     body
