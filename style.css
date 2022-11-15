@@ -575,6 +575,7 @@ footer
         border-top: none;
         border-bottom: solid 3px #0065fc;
         margin: 0;
+        padding-top: -1px !important;
     }
 
     .introduction
