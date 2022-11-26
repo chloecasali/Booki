@@ -384,14 +384,14 @@ nav li a:hover
 }
 .activity-card
 {
-    width: 80%;
+    width: 100%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding: 0;
     margin: 0;
 }
 .activity-card-image
 {
-    width: 100%;
+    width: 280px;
     height: 389px;
 }
 .activity-card-image img
@@ -438,6 +438,20 @@ footer
     padding-left: 40px;
 }
 
+@media screen and (min-width: 993px) and (max-width: 1225px) {
+    .activity-card
+    {
+        width: 225px;
+    }
+    .activity-card-image
+    {
+        width: 225px;
+    }
+    .activity-card-image img
+    {
+        width: 225px;
+    }
+}
 
 /*RESPONSIVE TABLETTE*/
 @media screen and (max-width: 992px) {
@@ -471,11 +485,10 @@ footer
     {
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 40px;
     }
     .popular-card
     {
-        width: 100%;
+        width: 210px;
         height: 144px;
     }
     .popular-image-card
@@ -487,9 +500,13 @@ footer
     {
         margin-top: 5px;
     }
-    .rate-list
+    .popular-description-card
     {
-        margin-bottom: 150px;
+        gap: 35px;
+    }
+    .popular-description-card2
+    {
+        gap: 18px;
     }
     
     
@@ -616,15 +633,18 @@ footer
     .div-accommodations-cards-block
     {
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 31px;
     }
     .accommodation-cards
     {
+        width: 100%;
         height: 199px ;
     }
     .accommodation-image-card
     {
+        width: 335px;
         height: 124px;
     }
     .accommodation-image-card img
@@ -646,9 +666,14 @@ footer
         width: 100%;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         gap: 5px ;
         margin: 0;
         padding: 0;
+    }
+    .popular-card
+    {
+        width: 334px;
     }
     .div-popular-description h5
     {
@@ -656,22 +681,22 @@ footer
         padding-top: 15px;
         margin: 0;
     }
-    
     .div-popular-description li 
     {
         font-size: 14px;
     }
     .popular-description-card
     {
-        padding-top: 7px ;
-        gap: 55px;
+        gap: 50px;
     }
     .popular-description-card2
     {
-        padding-top: 7px ;
-        gap: 35px;
+        gap: 50px;
     }
-
+    .description-responsive-mobile
+    {
+        gap: 70px;
+    }
     .activities
     {
         margin-top: 100px;
@@ -683,6 +708,7 @@ footer
     .div-activities-cards-block
     {
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 31px;
     }
@@ -693,10 +719,12 @@ footer
     }
     .activity-card-image
     {
+        width: 100%;
         height: 134px;
     }
     .activity-card-image img
     {
+        width: 334px;
         height: 134px;
     }
 
