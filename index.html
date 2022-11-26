@@ -71,7 +71,7 @@
         </div>
 
 
-
+      
 
         <div class="d-flex div-sections-block"> <!--<div> qui englobe les deux sections Hébergements/Activités-->
 
@@ -82,7 +82,7 @@
                         
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards"> <!--cards hébergement qui sont des liens cliquables-->
-                                <img class="d-flex accommodation-image-card" src="assets/images/Rectangle.png" alt="auberge_de_la_canebière"> <!--image de la card-->
+                                <img class="d-flex img_accomodation" src="assets/images/Rectangle.png" alt="auberge_de_la_canebière"> <!--image de la card-->
                                     <h5>Auberge La Canebière</h5> <!--<h5> titre de la card-->   
                                         <ul class="d-flex accommodation-description-card"> <!--description de la card en deux parties :-->
                                             <li>Nuit à partir de 25€</li> <!--le prix de la nuit-->
@@ -96,7 +96,7 @@
 
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards">
-                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle1.png" alt="hôtel_du_port">
+                            <img class="d-flex img_accomodation" src="assets/images/Rectangle1.png" alt="hôtel_du_port">
                                 <h5>Hôtel du port</h5>
                                     <ul class="d-flex accommodation-description-card">
                                         <li>Nuit à partir de 52€</li>
@@ -110,7 +110,7 @@
 
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards">
-                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle2.png" alt="hôtel_les_mouettes">
+                            <img class="d-flex img_accomodation" src="assets/images/Rectangle2.png" alt="hôtel_les_mouettes">
                                 <h5>Hôtel Les mouettes</h5>
                                     <ul class="d-flex accommodation-description-card">
                                         <li>Nuit à partir de 76€</li>
@@ -124,7 +124,7 @@
 
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards">
-                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle4.png" alt="hôtel_de_la_mer">
+                            <img class="d-flex img_accomodation" src="assets/images/Rectangle4.png" alt="hôtel_de_la_mer">
                                 <h5>Hôtel de la mer</h5>
                                     <ul class="d-flex accommodation-description-card">
                                         <li>Nuit à partir de 46€</li>
@@ -138,7 +138,7 @@
 
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards">
-                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle5.png" alt="auberge_le_panier">
+                            <img class="d-flex img_accomodation" src="assets/images/Rectangle5.png" alt="auberge_le_panier">
                                 <h5>Auberge Le Panier</h5>
                                     <ul class="d-flex accommodation-description-card">
                                         <li>Nuit à partir de 23€</li>
@@ -152,7 +152,7 @@
 
 
                         <a href="#" class="card-link"><article class="d-flex accommodation-cards">
-                            <img class="d-flex accommodation-image-card" src="assets/images/Rectangle6.png" alt="hôtel_chez_amina">
+                            <img class="d-flex img_accomodation" src="assets/images/Rectangle6.png" alt="hôtel_chez_amina">
                                 <h5>Hôtel Chez Amina</h5>
                                     <ul class="d-flex accommodation-description-card">
                                         <li>Nuit à partir de 96€</li>
@@ -197,9 +197,9 @@
                                     <img class="d-flex popular-image-card" src="assets/images/Rectangle24.png" alt="hôtel_bleu_et_blanc">
                                         <div class="div-popular-description">
                                             <h5>Hôtel Bleu et Blanc</h5>
-                                                <ul class="d-flex popular-description-card description-responsive-mobile">
+                                                <ul class="d-flex popular-description-card">
                                                     <li>Nuit à partir de 68€</li>
-                                                    <li><i class="fa-solid fa-star rate"></i>
+                                                    <li class="rate-list"><i class="fa-solid fa-star rate"></i>
                                                         <i class="fa-solid fa-star rate"></i>
                                                         <i class="fa-solid fa-star rate"></i>
                                                         <i class="fa-solid fa-star rate"></i>
@@ -232,40 +232,44 @@
 
 
 
-            <section class="d-flex activities" id="activités"> <!--section "Activités"-->
-                    <h3>Activités à Marseille</h3> <!--<h3> de la section "Activités"-->
-                        <div class="d-flex div-activities-cards-block"> <!--<div> qui englobe toutes les cards "Activités"-->
+            <section class="activities" id="activites"> 
+                    <h2 class="titre_activite">Activités à Marseille</h2> 
+                        <div class="flex_activites"> 
+                            <div class="activite_card">
+                                <a href="#">
+                                    <img src="assets/images/vieux_port_medium.jpg"
+                                        class="imgactivites" alt="Vieux-Port">
+                                    <div class="card_title">Vieux-Port</div>
+                                </a>
+                            </div>
 
+                            <div class="activite_card">
+                                <a href="#">
+                                    <img src="assets/images/fort_de_pomegues_medium.jpg"
+                                        class="imgactivites" alt="Fort de Pomègues">
+                                    <div class="card_title">Fort de Pomègues</div>
+                                </a>
+                            </div>
 
-                            <a href="#" class="card-link"><article class="activity-card"> <!--cards activités qui sont des liens cliquables-->
-                                <div class="activity-card-image"><img src="assets/images/vieux_port_medium.jpg" alt="vieux_port"></div> <!--image de la card-->
-                                <div class="activity-card-title"><h5>Vieux Port</h5></div> <!--titre de la card-->
-                            </article></a>
-                            
+                            <div class="activite_card">
+                                <a href="#">
+                                    <img src="assets/images/parc_national_des_calanques_medium.jpg"
+                                        class="imgactivites" alt="Parc national des Calanques">
+                                    <div class="card_title">Parc national des Calanques</div>
+                                </a>
+                            </div>
 
-                            <a href="#" class="card-link"><article class="activity-card">
-                                <div class="activity-card-image"><img src="assets/images/fort_de_pomègues_medium.jpg" alt="fort_de_pomègues"></div>
-                                <div class="activity-card-title"><h5>Fort de Pomègues</h5></div>
-                            </article></a>
-
-
-                            <a href="#" class="card-link"><article class="activity-card">
-                                <div class="activity-card-image"><img src="assets/images/parc_national_des_calanques_medium.jpg" alt="parc_national_des_calanques"></div>
-                                <div class="activity-card-title"><h5>Parc national des Calanques</h5></div>
-                            </article></a>
-
-
-                            <a href="#" class="card-link"><article class="activity-card">
-                                <div class="activity-card-image"><img src="assets/images/notre_dame_de_la_garde_medium.jpg" alt="notre_dame_de_la_garde"></div>
-                                <div class="activity-card-title"><h5>Notre-Dame-de-la-Garde</h5></div>
-                            </article></a>
-
-                            
+                            <div class="activite_card">
+                                <a href="#">
+                                    <img src="assets/images/notre_dame_de_la_garde_medium.jpg"
+                                        class="imgactivites" alt="Notre-Dame-de-la-Garde">
+                                    <div class="card_title">Notre-Dame-de-la-Garde</div>
+                                </a>
+                            </div>
+    
                         </div>
                 </section>
-
-
-
+ 
 
         <footer class="d-flex"> <!--footer, pied de page du site Booki-->
             <section class="d-flex footer-all-rubrics"> <!--les trois rubriques du footer-->
