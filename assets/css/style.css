@@ -291,6 +291,299 @@ nav li a:hover
     padding: 0px;
     margin: 0px;
 }
+/* corps de la page version desktop */
+*
+{
+    box-sizing: border-box;
+}
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+body
+{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.d-flex
+{
+    display: flex;
+} 
+h1
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+h2
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+h3
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+h4
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    padding: 0;
+}
+h5
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0;
+    margin: 0;
+}
+ul
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+p
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+input
+{
+    font-size: 18px;
+    padding-left: 15px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+section, article
+{
+    width: 100%;
+    padding: 20px;
+}
+
+/* header : barre de navigation + logo Booki */
+header
+{
+    justify-content: space-between;
+}
+nav ul
+{
+    margin: 0;
+    margin-top: 46px;
+    padding: 0;
+}
+nav li 
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+nav li a
+{
+    padding: 20px;
+}
+nav li a:hover
+{
+    border-top: solid 2px #0065fc;
+    color: #0065fc;
+    font-weight: 500;
+    padding-top: 44px;
+}
+.logo
+{
+    width: 60px;
+    height: 30px;
+    margin-top: 46px;
+}
+
+/* introduction avec en tête h1 et p (voir css corps de la page) */
+.introduction
+{
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+/* barre de recherche en 3 parties */
+.location-icon
+{
+    width: 14px;
+    height: 18px;
+    color: black;
+}
+.location-button
+{
+    width: 50px;
+    height: auto;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center;
+    align-items: center;
+}
+.input-utilisateur
+{
+    width: 282px;
+    height: 49px;
+    border: 1px solid #F2F2F2;  
+    outline: none; 
+}
+.submit-desktop-button
+{
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
+    color: #FFFF;
+}
+.submit-mobile-button
+{
+    display: none;
+    width: 49px;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+}
+.fa-magnifying-glass
+{
+    display: none;
+    color: #FFFF;
+}
+
+/* barre des filtres */
+.filters-menu
+{
+    flex-wrap: wrap;
+}
+.filters-list
+{
+    flex-flow: row wrap;
+    gap: 30px;
+    padding: 0;
+    padding-left: 15px;
+}
+.filters-list li
+{
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px;
+}
+.filters-list li:hover
+{
+    background-color: #deebff;
+}
+.filters-list li a
+{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 10px;
+}
+.filters-icons
+{
+    color: #0065fc;
+}
+
+/* paragraphe informatif */
+.information
+{
+    gap: 15px;
+}
+.i
+{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    color: #0065FC;
+    margin-top: 10px;
+}
+
+.div-sections-block /* <div> qui regroupe mes deux sections */
+{
+    width: 100%; /* width totale */
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.more /* "Afficher plus" */
+{
+    margin-top: 40px;
+}
+.rate /* évaluation des clients */
+{
+    color: #0065fc;
+}
+.rate:nth-child(5)
+{
+    color: #F2F2F2;
+}
+
+/* section "Hébergements" */
+.accommodations
+{
+    width: 66%; /* 2/3 de la width totale */
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    gap: 23px;
+}
+.accommodations h2
+{
+    margin: 0;
+    padding: 0;
+}
+.div-accommodations-cards-block
+{
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+.accommodation-cards
+{
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #FFFF;
+    padding: 0;
+    margin: 0;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.accommodation-cards h5
+{
+    margin-left: 10px;
+}
+.accommodation-image-card
+{
+    flex-direction: column; 
+    padding: 0px;
+    margin: 0px;
+}
 .accommodation-description-card
 {
     flex-direction: column;
@@ -702,20 +995,15 @@ footer
         padding-top: 15px;
         margin: 0;
     }
-    
+    .popular-card ul
+    {
+        flex-direction: column;
+        gap: 60px;
+        padding-top: 7px;
+    }
     .div-popular-description li 
     {
         font-size: 14px;
-    }
-    .popular-description-card
-    {
-        padding-top: 7px ;
-        gap: 55px;
-    }
-    .popular-description-card2
-    {
-        padding-top: 7px ;
-        gap: 35px;
     }
 
     .activities h3 
