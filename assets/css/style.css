@@ -481,7 +481,7 @@ footer
     }
     .popular-card
     {
-        width: 100%;
+        width: 210px;
         height: 144px;
     }
     .popular-image-card
@@ -489,9 +489,9 @@ footer
         width: 33%;
         height: 144px;
     }
-    .div-popular-description h5
+    .div-popular-description ul
     {
-        margin-top: 5px;
+        gap: 45px;
     }
     
     .activities
@@ -514,6 +514,7 @@ footer
         object-fit: cover;
     }
 }
+
 
 /* RESPONSIVE SMARTPHONE */
 @media screen and (max-width: 768px) {
@@ -638,6 +639,10 @@ footer
     {
         border-radius: 0px;
     }
+    .popular-card
+    {
+        width: 100%;
+    }
     .div-popular-cards-block
     {
         width: 100%;
@@ -656,15 +661,12 @@ footer
     .popular-card ul
     {
         flex-direction: column;
+        gap: 70px;
     }
     .div-popular-description li 
     {
         font-size: 14px;
         gap: 65px;
-    }
-    .popular-description-card2
-    {
-        gap: 75px;
     }
 
     .activities h2
