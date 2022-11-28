@@ -6,7 +6,7 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+    src: url('https://fonts.google.com/specimen/Raleway#styles');
 }
 body
 {
@@ -489,10 +489,14 @@ footer
         width: 33%;
         height: 144px;
     }
-    .div-popular-description ul
+    .popular-description-card
     {
         gap: 45px;
     }
+    .popular-description-card2
+    {
+        gap: 25px;
+    } 
     
     .activities
     {
@@ -621,18 +625,15 @@ footer
     {
         height: 199px ;
     }
-    .accommodation-image-card
-    {
-        height: 124px;
-    }
-    .accommodation-image-card img
-    {
-        height: 124px;
-    }
     .accommodation-description-card
     {
         margin-top: 5px;
         gap: 10px;
+    }
+    .img_accomodation 
+    {
+    object-fit: fill;
+    border: none;
     }
 
     .populars
